@@ -1,0 +1,39 @@
+
+
+
+///////////////////////////////////////////// SUBLIME  //////////////////////////////
+install package
+						/*settings user*/
+		 	"theme": "predawn-DEV.sublime-theme",
+			"word_wrap": false,
+			"color_scheme": "Packages/Colorsublime - Themes/Bungler.tmTheme"
+			
+						/*keybindings user*/
+
+				[
+					 {"keys": ["ctrl+alt+n"], "command": "toggle_side_bar" },
+				]										
+
+theme https://github.com/jamiewilson/predawn
+
+////////////////////////////////////////////// UBUNTU ////////////////////////
+/*php apache mysql*/
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+
+/*mcrypt*/
+php5enmod mcrypt
+
+/*rewrite engine*/
+a2enmod rewrite
+
+/*unity tweak tools*/
+install unity tweak tools
+
+/*compiz plugins*/
+http://askubuntu.com/questions/79691/where-do-i-get-extra-compiz-plugins
+http://askubuntu.com/questions/86977/how-to-correctly-enable-desktop-cube-in-unity-3d
+
+/*theme icons*/
+
+ubuntu      icons  "numix circle"
+			theme  " Ambiance flat red "

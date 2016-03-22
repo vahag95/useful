@@ -1,0 +1,26 @@
+       /*****************************************SendLane*//////////////////////////////////
+       											Send Email
+
+
+
+	public function sendEmailWithSandLane( $email = null )
+	{
+
+		$url = \Config::get('voicestack.sendlane_domain');
+		$api = \Config::get('voicestack.sendlane_api');
+		$hash = \Config::get('voicestack.sendlane_hash');
+		$subject = urlencode('You Have a New VoiceStak Message!');
+		$content = urlencode('<center><h3>You have a new VoiceStak message </h3><h4><a href="http://voice-stack.dev">Log into your VoiceStak account to access it.</a></h4><h4>Cheers,</h4><h4>The VoiceStak Team</h4></center>');
+		
+		foreach ($email as $currentemail ) {
+			var_dump($currentemail);
+			$ch = curl_init($url."/api/v1/send-mail?api=".$api."&hash=".$hash."&sender_name=VoiceStack&sender_email=no-reply@voicestak.com&receipent_email=".$currentemail."&subject=".$subject."&content_html=".$content);
+
+			curl_setopt($ch, CURLOPT_HEADER, 0);
+			curl_setopt($ch, CURLOPT_POST, 1);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			$result = curl_exec($ch);
+			curl_close($ch);
+			var_dump( $result );
+		}
+	}       											

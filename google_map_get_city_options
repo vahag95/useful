@@ -1,0 +1,5 @@
+$city_name = "abovyan";
+$google_maps_base_url = "http://maps.google.com/maps/api/geocode/json?sensor=false&address=";
+$city_map_url = $google_maps_base_url.urlencode($city_name);
+$json = file_get_contents($city_map_url);
+$data = json_decode($json, TRUE);

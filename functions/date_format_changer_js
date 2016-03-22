@@ -1,0 +1,10 @@
+function yyyymmdd(dateIn) {
+   var a = dateIn;
+   var b = a.getFullYear();
+   var c = a.getMonth();
+   (++c < 10)? c = "0" + c : c;
+   var d = a.getDate();
+   (d < 10)? d = "0" + d : d;
+   var final = b + "-" + c + "-" + d; 
+   return final;
+}

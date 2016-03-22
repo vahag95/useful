@@ -1,0 +1,3 @@
+<select class="form-control selectpicker" name="assignedCampaigns" data-live-search="true" multiple>
+   <option value=""></option>
+</select>

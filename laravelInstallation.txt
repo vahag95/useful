@@ -1,0 +1,13 @@
+composer global require "laravel/installer=~1.1"
+
+Put an alias to the freshly installed Laravel installer in your user configuration .bashrc:
+
+nano ~/.bashrc
+
+And place this inside the file:
+
+alias laravel='~/.composer/vendor/bin/laravel'
+
+And run the following to make sure your bashrc profile is reloaded:
+
+source ~/.bashrc

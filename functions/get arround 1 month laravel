@@ -1,0 +1,3 @@
+	public function widgetClicks() {
+  		return $this->HasMany('App\\Models\\WidgetClicks')->where('created_at', '>=', Carbon::now()->subMonth());
+	}
