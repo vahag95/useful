@@ -1,0 +1,14 @@
+SetEnvIf Host laravel.abcn.com passreq
+SetEnvIf Host admin.abcn.com passreq
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /var/www/html/dev2.alliancevirtualoffices.com/.htpasswd
+Require valid-user
+Require valid-user
+Order allow,deny
+Allow from all
+Deny from env=passreq
+Satisfy any
+
+in .htpasswd
+login:password
